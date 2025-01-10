@@ -58,7 +58,7 @@ nav{
     background: #1f2937;
   }
   
-  .left{
+  .top > .left{
     width: 100%;
     height: 100%;
     display: flex;
@@ -67,17 +67,13 @@ nav{
     flex-direction: column;
   }
   
-  .left> h1 {
- 
-  }
-  
-  .left>p {
+  .top>.left>p {
     
     color: #cbd5e1; 
     margin-bottom: 24px;   
   }
   
-  .left>button {
+  .left> button {
     background-color: #3b82f6; 
     color: #ffffff;
     border: none;
@@ -86,7 +82,7 @@ nav{
     border-radius: 5px;
   }
   
-  .right {
+  .top>.right {
     background-color: #747c86; 
     color: #cbd5e1;
     width: 100%;
@@ -98,7 +94,7 @@ nav{
   .information{
     background: white;
     text-align: center;
-    margin-top: 3%;
+    margin: 3% 0%;
 
   }
 
@@ -109,12 +105,14 @@ nav{
   }
 
   .boxes > p{
-    color: #1f2937;
-    font-size: 12px;
+    color: #5b626b;
+    font-size: 14px;
     margin-top: 5%;
+    display: flex;
+    text-align: center;
   }
 
-  .container{
+  .information>.container{
     padding: 5% 14%;
     display: flex; 
     justify-content: center;
@@ -123,10 +121,9 @@ nav{
 
   .boxes{
     display: flex;
-    flex-direction: column;
-    text-align: justify;
     align-items: center;
-    flex: 0;
+    flex-direction: column;
+   
   }
   .boxes > button{
    
@@ -136,3 +133,68 @@ nav{
     background: white;
     border-radius: 10px;
   }
+
+  .quote{
+    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 20%;
+  }
+
+  .quote > p:nth-child(1) {
+    font-size: 24.5px;
+    font-family: light italic;
+    font-weight: 300;
+    color: #1f2937;
+    padding: 2%;
+  }
+
+  .quote > p:nth-child(2){
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+    margin-right: 5%;
+  }
+
+  /**/
+  .sign-up > *{
+  
+   display: flex;
+  }
+  .sign-up > .container{
+    background: #3b82f6;
+    border-radius: 5px;
+    margin: 9% 12%;
+    padding: 4% 10%;
+    display: flex;
+    gap: 70px;
+  }
+.left >p:nth-child(1){
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .left >p:nth-child(2){
+    color: #ffffff;
+    font-size: 13px;
+  }
+
+  .sign-up>.container> .right{
+    display: flex;
+    align-items: center;
+    gap: 4;
+  }
+  .sign-up>.container> .right> button{
+    border: #e5e7eb solid  2px;
+    border-radius: 5px;
+    padding: 5px 25px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  
+
+
