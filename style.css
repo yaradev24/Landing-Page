@@ -194,7 +194,14 @@ nav{
     font-weight: 600;
     font-size: 12px;
   }
+/**/
+.footer{
+  background: #1f2937;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+}
 
-  
 
 
