@@ -4,19 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", serif;
-    
-}
-.top > .left >h1{
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
+    font-family: "Roboto", serif;  
 }
 
-.top > p{
-    font-size: 18px;
-    color: #e5e7eb;
-}
 .header{
     display: flex;
     align-items: center;
@@ -51,20 +41,23 @@ nav{
 
  .top {
     display: flex;
-    padding: 8%;
-    width: 100%;
-    height: 100%;
-    gap: 30px;
+    padding: 9%;
     background: #1f2937;
+    gap:0;
   }
+  .top > .left >h1{
+    font-size: 77px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.top > p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
   
   .top > .left{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;  
-    flex-direction: column;
+    flex:1;
   }
   
   .top>.left>p {
@@ -85,7 +78,7 @@ nav{
   .top>.right {
     background-color: #747c86; 
     color: #cbd5e1;
-    width: 100%;
+    flex:1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,42 +87,49 @@ nav{
   .information{
     background: white;
     text-align: center;
+    flex-direction: column;
     margin: 3% 0%;
-
+    display: flex;
   }
-
+.info-con{
+  display: flex;
+  flex:1;
+  text-align: justify;
+  text-align-last: center;
+  word-spacing: 0.2px;
+  line-height: 1;
+  gap: 5%;
+  justify-content: center;
+  padding: 4% 9%;
+}
   .information> h1{
-    font-size: 30px;
+    font-size: 36px;
     color: #1f2937;
     font-weight: 900;
   }
 
   .boxes > p{
     color: #5b626b;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 5%;
-    display: flex;
-    text-align: center;
+    font-size: 18px;
+    width: 180px;
+    flex: 1;
+    
+
   }
 
   .information>.container{
     padding: 5% 14%;
     display: flex; 
     justify-content: center;
-    gap:5%;
+
   }
 
-  .boxes{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-   
-  }
   .boxes > button{
-   
     border: solid #3882f6 4px;
-    height: 130px;
-    width: 130px;
+    height: 180px;
+    width: 180px;
     background: white;
     border-radius: 10px;
   }
@@ -142,25 +142,23 @@ nav{
   }
 
   .quote > p:nth-child(1) {
-    font-size: 24.5px;
+    font-size: 36px;
     font-family: light italic;
     font-weight: 300;
     color: #1f2937;
-    padding: 2%;
+ 
   }
 
   .quote > p:nth-child(2){
     display: flex;
     justify-content: end;
-    font-weight: 600;
-    margin-right: 5%;
+    font-weight: 900;
+    font-size: 18px;
+   
   }
 
   /**/
-  .sign-up > *{
-  
-   display: flex;
-  }
+ 
   .sign-up > .container{
     background: #3b82f6;
     border-radius: 5px;
@@ -169,38 +167,45 @@ nav{
     display: flex;
     gap: 70px;
   }
-.left >p:nth-child(1){
+  .sign-up-left{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+  }
+.sign-up-left >p:nth-child(1){
     color: #ffffff;
     font-weight: 600;
+    font-size: 24px;
+    flex-direction: column;
+  }
+
+  .sign-up-left >p:nth-child(2){
+    color: #ffffff;
     font-size: 18px;
   }
 
-  .left >p:nth-child(2){
-    color: #ffffff;
-    font-size: 13px;
-  }
-
-  .sign-up>.container> .right{
+  .sign-up-right{
     display: flex;
     align-items: center;
+    
     gap: 4;
   }
-  .sign-up>.container> .right> button{
+  .sign-up-right> button{
     border: #e5e7eb solid  2px;
     border-radius: 5px;
     padding: 5px 25px;
     background: transparent;
     color: #ffffff;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
   }
 /**/
 .footer{
   background: #1f2937;
-  padding: 30px;
   color: #ffffff;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
+  padding: 3%;
 }
 
 
